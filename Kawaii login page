@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://i.pinimg.com/originals/88/97/31/8897317b97e8e26460d385269ed92718.gif') no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 450px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(7px);
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            position: relative;
+            animation: slideIn 0.5s forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .container h2 {
+            color: royalblue;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(2, 2, 300, 0.4);
+            transition: text-shadow 0.3s;
+        }
+
+        .container input[type="text"],
+        .container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            background: rgba(255, 220, 255, 0.3);
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            margin: 10px 0;
+        }
+
+        .container button {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(90deg, purple, blue);
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .container button:hover {
+            background: linear-gradient(80deg, purple, blue);
+            text-shadow: 0 0 10px rgba(0, 0, 150, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button>Login</button>
+    </div>
+</body>
+</html>
+
+
+
+
